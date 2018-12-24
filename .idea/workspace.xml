@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1405d95-742d-4cbf-9682-d6f982b38d3e" name="Default" comment="" />
+    <list default="true" id="c1405d95-742d-4cbf-9682-d6f982b38d3e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/FlowerShop.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/bouquets/BouquetsCreator.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/bouquets/IBouquets.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/bouquets/pack/Pack.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/bouquets/pack/PackType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/bouquets/phrase/PhraseMaterial.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/bouquets/phrase/Phrases.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/delivery/Delivery.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/delivery/DeliveryType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/discounts/DiscountManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/flower/Category.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/flower/Flower.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/order/Customer.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/order/IOrder.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/order/Order.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/order/OrderDepartment.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/order/Recipient.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/payment/PaymentData.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/presents/IPresents.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/presents/Postcard.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/presents/Sweets.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/backend/presents/Toys.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -366,12 +394,12 @@
       <workItem from="1545324221966" duration="13625000" />
       <workItem from="1545578915246" duration="612000" />
       <workItem from="1545590308441" duration="8559000" />
-      <workItem from="1545673291146" duration="909000" />
+      <workItem from="1545673291146" duration="1198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23705000" />
+    <option name="totallyTimeSpent" value="23994000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
