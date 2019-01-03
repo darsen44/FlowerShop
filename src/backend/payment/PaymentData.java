@@ -1,4 +1,7 @@
 package backend.payment;
 
-public class PaymentData {
+public enum PaymentData {
+    CARD,
+    CASH
+
 }

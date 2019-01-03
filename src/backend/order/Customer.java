@@ -6,7 +6,7 @@ public class Customer {
     private String firstName;
     private String lastName;
     private int numberOfPhone;
-    private PaymentData payment; // ???
+    private PaymentData payment;
 
     public Customer(String firstName, String lastName, int numberOfPhone, PaymentData payment) {
         this.firstName = firstName;
