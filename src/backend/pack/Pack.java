@@ -1,9 +1,8 @@
 package backend.pack;
 
-import backend.bouquets.IBouquets;
 import backend.utils.Color;
 
-public class Pack implements IBouquets {
+public class Pack {
     private PackType packType;
     private Color color;
     private int price;

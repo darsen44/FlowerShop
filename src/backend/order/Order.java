@@ -1,7 +1,7 @@
 package backend.order;
 
-import backend.delivery.Delivery;
-import backend.payment.PaymentData;
+import backend.delivery.IDelivery;
+import backend.payment.IPayStrategy;
 
 import java.util.List;
 
@@ -9,10 +9,10 @@ public class Order {
     private List<IOrder> order;
     private Customer customer;
     private Recipient recipient;
-    private Delivery delivery;
-    private PaymentData payment;
+    private IDelivery delivery;
+    private IPayStrategy payment;
 
-    public Order(List<IOrder> order, Customer customer, Recipient recipient, Delivery delivery, PaymentData payment) {
+    public Order(List<IOrder> order, Customer customer, Recipient recipient, IDelivery delivery, IPayStrategy payment) {
         this.order = order;
         this.customer = customer;
         this.recipient = recipient;
@@ -20,7 +20,7 @@ public class Order {
         this.payment = payment;
     }
 
-    public Order(List<IOrder> order, Customer customer, Recipient recipient, Delivery delivery) {
+    public Order(List<IOrder> order, Customer customer, Recipient recipient, IDelivery delivery) {
 
         this.order = order;
         this.customer = customer;
@@ -40,11 +40,11 @@ public class Order {
         return recipient;
     }
 
-    public Delivery getDelivery() {
+    public IDelivery getDelivery() {
         return delivery;
     }
 
-    public PaymentData getPayment() {
+    public IPayStrategy getPayment() {
         return payment;
     }
 }

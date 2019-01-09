@@ -4,16 +4,19 @@ package backend.bouquets;
 import backend.flower.Plant;
 import backend.pack.Pack;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class Bouqet {
+public class Bouquet implements IBouquet {
     private List<Plant> plants;
-    private List<Pack> packs;
     private int totalPrice = 0;
 
-    public Bouqet(List<Plant> plants, List<Pack> packs) {
+    public Bouquet() {
+        this.plants = new ArrayList<>();
+    }
+
+    public Bouquet(List<Plant> plants) {
         this.plants = plants;
-        this.packs = packs;
         calculateTotalPrice();
     }
 
@@ -26,15 +29,7 @@ public class Bouqet {
         calculateTotalPrice();
     }
 
-    public List<Pack> getPacks() {
-        return packs;
-    }
-
-    public void setPacks(List<Pack> packs) {
-        this.packs = packs;
-        calculateTotalPrice();
-    }
-
+    @Override
     public int getTotalPrice() {
         calculateTotalPrice();
         return totalPrice;
@@ -48,17 +43,12 @@ public class Bouqet {
         for (Plant plant : plants) {
             totalPrice += plant.getPrice();
         }
-
-        for (Pack pack : packs) {
-            totalPrice += pack.getPrice();
-        }
     }
 
     @Override
     public String toString() {
-        return "Bouqet{" +
+        return "Bouquet{" +
                 "plants=" + plants +
-                ", packs=" + packs +
                 ", totalPrice=" + getFormattedPrice() +
                 '}';
     }

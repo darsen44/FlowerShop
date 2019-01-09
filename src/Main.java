@@ -1,5 +1,10 @@
 import backend.Store;
 import backend.StoreFiller;
+import backend.bouquets.Bouquet;
+import backend.bouquets.Cower;
+import backend.bouquets.IBouquet;
+import backend.bouquets.Tape;
+import backend.flower.category.Category;
 import backend.flower.category.Flower;
 
 public class Main {
@@ -12,9 +17,19 @@ public class Main {
 
     public static void main(String[] args) {
         StoreFiller filler = new StoreFiller();
-        Main main = new Main(filler.createStore(100, 50, 10));
-        main.showAvailableActions();
-        main.excecute(4);
+//        Main main = new Main(filler.createStore(100, 50, 10));
+//        main.showAvailableActions();
+//        main.excecute(4);
+
+        IBouquet bouquet = new Cower(
+                new Tape(
+                        new Bouquet(filler.createFlowers(4))
+                )
+        );
+
+        System.out.println(bouquet.toString());
+        System.out.println(bouquet.getTotalPrice());
+
     }
 
     public void showAvailableActions() {

@@ -1,8 +1,7 @@
 package backend;
 
-import backend.bouquets.Bouqet;
+import backend.bouquets.Bouquet;
 import backend.flower.Plant;
-import backend.flower.category.Category;
 import backend.order.Order;
 import backend.pack.Pack;
 import backend.utils.Country;
@@ -14,10 +13,10 @@ public class Store {
     private static final Country NATIVE = Country.MEXICO;
     private List<Plant> plants;
     private List<Pack> packs;
-    private List<Bouqet> bouquets;
+    private List<Bouquet> bouquets;
     private List<Order> orders;
 
-    public Store(List<Plant> plants, List<Pack> packs, List<Bouqet> bouquets) {
+    public Store(List<Plant> plants, List<Pack> packs, List<Bouquet> bouquets) {
         this.plants = plants;
         this.packs = packs;
         this.bouquets = bouquets;
@@ -33,8 +32,8 @@ public class Store {
             System.out.println(pack);
         }
         System.out.println("Bouquets");
-        for (Bouqet bouqet : bouquets) {
-            System.out.println(bouqet);
+        for (Bouquet bouquet : bouquets) {
+            System.out.println(bouquet);
         }
     }
 

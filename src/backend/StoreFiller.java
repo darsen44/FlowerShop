@@ -1,6 +1,6 @@
 package backend;
 
-import backend.bouquets.Bouqet;
+import backend.bouquets.Bouquet;
 import backend.flower.Plant;
 import backend.flower.category.Bush;
 import backend.flower.category.Category;
@@ -12,7 +12,6 @@ import backend.utils.Color;
 import backend.utils.Country;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -44,7 +43,7 @@ public class StoreFiller {
         for (int i = 0; i < packCount; i++) {
             packs.add(createPack());
         }
-        List<Bouqet> bouquets = new ArrayList<>();
+        List<Bouquet> bouquets = new ArrayList<>();
         for (int i = 0; i < bouqetCount; i++) {
             bouquets.add(createBouqet());
         }
@@ -60,8 +59,13 @@ public class StoreFiller {
         return plants;
     }
 
+
     public Plant createPlant(Category[] categories) {
         Category category = categories[random.nextInt(categories.length)];
+        return createPlant(category);
+    }
+
+    public Plant createPlant(Category category) {
         Country country = countries[random.nextInt(countries.length)];
         Color color = colors[random.nextInt(colors.length)];
         int length = 1 + random.nextInt(100);
@@ -76,10 +80,14 @@ public class StoreFiller {
         return new Pack(packType, color, price);
     }
 
-    private Bouqet createBouqet() {
+    public Bouquet createBouqet() {
         List<Plant> plants = createPlants(flowers, random.nextInt(50));
         List<Pack> packs = new ArrayList<>();
         packs.add(createPack());
-        return new Bouqet(plants, packs);
+        return new Bouquet(plants);
+    }
+
+    public List<Plant> createFlowers(int plantCount) {
+        return  createPlants(flowers, plantCount);
     }
 }

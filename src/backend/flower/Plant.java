@@ -1,6 +1,5 @@
 package backend.flower;
 
-import backend.bouquets.IBouquets;
 import backend.flower.category.Category;
 import backend.order.IOrder;
 import backend.utils.Color;

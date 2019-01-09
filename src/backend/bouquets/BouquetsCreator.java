@@ -3,7 +3,7 @@ package backend.bouquets;
 import java.util.List;
 
 public class BouquetsCreator {
-    private static List<IBouquets> bouquets;
+    private static List<IBouquet> bouquets;
 
-    // public static List<IBouquets> createBouquets(){} TODO
+    // public static List<IBouquet> createBouquets(){} TODO
 }
